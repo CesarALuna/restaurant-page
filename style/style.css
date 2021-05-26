@@ -1,0 +1,36 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/mahmoud-fawzy-SY6kOypwGMM-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+        "column1 . .";
+    font-size: 1.1rem;
+}
+
+.column {
+    grid-area: "restInfo";
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    color: rgba(255, 255, 255, .9);
+    margin: 75px 0px 0px 40px;
+}
+
+.column #restInfo span {
+    font-weight: bold;
+}
+
+.column #restInfo p{
+    margin: 0;
+}
