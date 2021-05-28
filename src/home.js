@@ -1,0 +1,31 @@
+function createHome() {
+    const home = document.createElement("div");
+    home.classList.add("home");
+   
+    /*
+    const chefImage = document.createElement("img");
+    chefImage.src = "";
+    chefImage.alt = "";
+    */
+
+    home.appendChild(createParagraph("Sushi excellence in Downtown San Jose"));
+    home.appendChild(createParagraph("Serving the Rose Garden since 1998"));
+    home.appendChild(chefImage);
+    home.appendChild(createParagraph("We do takeout and dine-in!"));
+
+    return home;
+}
+
+function createParagraph(text) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    return paragraph;
+}
+
+function loadHome() {
+    const main = document.createElement("main");
+    main.textContent = ""'
+    main.appendChild(createHome());
+}
+
+export default loadHome;
