@@ -10,7 +10,7 @@ function createHome() {
 
     home.appendChild(createParagraph("Sushi excellence in Downtown San Jose"));
     home.appendChild(createParagraph("Serving the Rose Garden since 1998"));
-    home.appendChild(chefImage);
+    //home.appendChild(chefImage);
     home.appendChild(createParagraph("We do takeout and dine-in!"));
 
     return home;
@@ -23,8 +23,8 @@ function createParagraph(text) {
 }
 
 function loadHome() {
-    const main = document.createElement("main");
-    main.textContent = ""'
+    const main = document.getElementById("main");
+    main.textContent = "";
     main.appendChild(createHome());
 }
 
