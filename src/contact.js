@@ -9,14 +9,14 @@ function createContact() {
     address.textContent = "Address: 707 The Alameda, San Jose, CA";
 
     const restaurantLocation = document.createElement("img");
-    restaurantLocation.src = "dist/img/restaurant-map.png";
+    restaurantLocation.src = "img/restaurant-map.png";
     restaurantLocation.alt = "Sushi Kunai location";
 
     contact.appendChild(phoneNumber);
     contact.appendChild(address);
     contact.appendChild(restaurantLocation);
 
-    return contact
+    return contact;
 } 
 
 function loadContact() {

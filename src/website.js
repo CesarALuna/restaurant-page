@@ -8,7 +8,7 @@ function createHeader() {
 
     const restaurantName = document.createElement("h1");
     restaurantName.classList.add("restaurant-name");
-    restaurantName.textContent = "Sushi Kunai";
+    restaurantName.textContent = "GenkiSushi";
 
     header.appendChild(restaurantName);
     header.appendChild(createNav());
@@ -34,7 +34,7 @@ function createNav() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
-        loadHome();
+        loadMenu();
     });
 
     const contactButton = document.createElement("button");
@@ -43,7 +43,7 @@ function createNav() {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
-        loadHome();
+        loadContact();
     });
 
     nav.appendChild(homeButton);
@@ -61,6 +61,7 @@ function setActiveButton(button) {
             button.classList.remove("active");
         }
     });
+    
     button.classList.add("active");
 }
 
