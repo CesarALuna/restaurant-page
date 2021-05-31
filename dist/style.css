@@ -26,7 +26,12 @@ body {
   font-family: "Montserrat", cursive;
   font-size: 1.6rem;
   color: var(--font-color);
+<<<<<<< HEAD
   background-image: url("/dist/img/mahmoud-fawzy-SY6kOypwGMM-unsplash.jpg");
+=======
+  background-image: url("/img/mahmoud-fawzy-SY6kOypwGMM-unsplash.jpg");
+  background-color: #222;
+>>>>>>> 0fd321693b1f744358a851558c37bb1c6907669c
   background-attachment: fixed;
   background-size: cover;
 }
