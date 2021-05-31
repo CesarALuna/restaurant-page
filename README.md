@@ -3,6 +3,8 @@ Dynamic restaurant website utilizing mostly JavaScript, CSS, and dynamically ren
 
 Part of The Odin Project's Javascript fullstack web development course.
 
+[Preview here](https://cesaraluna.github.io/restaurant-page/)
+
 ## topics covered
     dynamic websites
     DOM manipulation
